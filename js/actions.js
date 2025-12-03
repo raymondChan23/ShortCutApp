@@ -52,8 +52,8 @@ function renderActions() {
         const searchLabelsHTML = searchLabels.length > 0 ? 
             `<div style="margin-top: 10px;"><strong style="font-size: 12px; color: #666;">Search Labels:</strong><br><span style="font-size: 11px; color: #888;">${searchLabels.join(', ')}</span></div>` : '';
 
-        const iconEnHTML = action.iconEn ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon EN:</strong><br><img src="${action.iconEn}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; border: 1px solid #e0e0e0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${action.iconEn}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${action.iconEn}</a></div>` : '';
-        const iconZhHTML = action.iconZh ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon ZH:</strong><br><img src="${action.iconZh}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; border: 1px solid #e0e0e0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${action.iconZh}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${action.iconZh}</a></div>` : '';
+        const iconEnHTML = action.iconEn ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon EN:</strong><br><img src="${action.iconEn}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${action.iconEn}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${action.iconEn}</a></div>` : '';
+        const iconZhHTML = action.iconZh ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon ZH:</strong><br><img src="${action.iconZh}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${action.iconZh}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${action.iconZh}</a></div>` : '';
 
         let tagBadge = '';
         if (action.tag && action.tag.code) {
@@ -69,6 +69,7 @@ function renderActions() {
                 <span class="action-code">${action.code}</span>
                 ${tagBadge}
                 <div class="action-buttons">
+                    <button class="btn-icon" onclick="cloneAction(${index})" title="Clone">📄</button>
                     <button class="btn-icon btn-edit" onclick="editAction(${index})" title="Edit">✏️</button>
                     <button class="btn-icon btn-delete" onclick="deleteAction(${index})" title="Delete">🗑️</button>
                 </div>
@@ -189,4 +190,27 @@ function deleteAction(index) {
         renderActions();
         showNotification('Shortcut deleted successfully!');
     }
+}
+
+function cloneAction(index) {
+    const original = jsonData.actions[index];
+    if (!original) return;
+    // Deep clone the object to avoid reference issues
+    const clone = JSON.parse(JSON.stringify(original));
+    // Generate a new code suffix
+    const baseCode = original.code || 'ACTION';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set(jsonData.actions.map(a => a.code));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.code = candidate;
+    // Insert clone next to original
+    jsonData.actions.splice(index + 1, 0, clone);
+    // Open edit modal prefilled with clone
+    currentEditIndex = index + 1;
+    editAction(currentEditIndex);
+    showNotification('Cloned action. Please review and save.');
 }

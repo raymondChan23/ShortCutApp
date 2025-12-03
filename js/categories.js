@@ -31,13 +31,14 @@ function renderCategories() {
         const searchLabelsHTML = searchLabels.length > 0 ? 
             `<div style="margin-top: 10px;"><strong style="font-size: 12px; color: #666;">Search Labels:</strong><br><span style="font-size: 11px; color: #888;">${searchLabels.join(', ')}</span></div>` : '';
 
-        const iconEnHTML = category.iconEn ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon EN:</strong><br><img src="${category.iconEn}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; border: 1px solid #e0e0e0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${category.iconEn}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${category.iconEn}</a></div>` : '';
-        const iconZhHTML = category.iconZh ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon ZH:</strong><br><img src="${category.iconZh}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; border: 1px solid #e0e0e0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${category.iconZh}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${category.iconZh}</a></div>` : '';
+        const iconEnHTML = category.iconEn ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon EN:</strong><br><img src="${category.iconEn}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${category.iconEn}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${category.iconEn}</a></div>` : '';
+        const iconZhHTML = category.iconZh ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon ZH:</strong><br><img src="${category.iconZh}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${category.iconZh}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${category.iconZh}</a></div>` : '';
 
         card.innerHTML = `
             <div class="action-header">
                 <span class="action-code">${category.code}</span>
                 <div class="action-buttons">
+                    <button class="btn-icon" onclick="cloneCategory(${index})" title="Clone">📄</button>
                     <button class="btn-icon btn-edit" onclick="editCategory(${index})" title="Edit">✏️</button>
                     <button class="btn-icon btn-delete" onclick="deleteCategory(${index})" title="Delete">🗑️</button>
                 </div>
@@ -146,4 +147,23 @@ function deleteCategory(index) {
         renderCategories();
         showNotification('Category deleted successfully!');
     }
+}
+
+function cloneCategory(index) {
+    const original = jsonData.categories[index];
+    if (!original) return;
+    const clone = JSON.parse(JSON.stringify(original));
+    const baseCode = original.code || 'CATEGORY';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set(jsonData.categories.map(c => c.code));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.code = candidate;
+    jsonData.categories.splice(index + 1, 0, clone);
+    currentEditIndex = index + 1;
+    editCategory(currentEditIndex);
+    showNotification('Cloned category. Please review and save.');
 }

@@ -36,6 +36,7 @@ function renderSearchHints() {
             <div class="action-header">
                 <span class="action-code">${hint.code}</span>
                 <div class="action-buttons">
+                    <button class="btn-icon" onclick="cloneSearchHint(${index})" title="Clone">📄</button>
                     <button class="btn-icon btn-edit" onclick="editSearchHint(${index})" title="Edit">✏️</button>
                     <button class="btn-icon btn-delete" onclick="deleteSearchHint(${index})" title="Delete">🗑️</button>
                 </div>
@@ -52,6 +53,25 @@ function renderSearchHints() {
 
     emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
     updateStats(jsonData.searchHints.length, visibleCount, 'Total Search Hints:');
+}
+
+function cloneSearchHint(index) {
+    const original = jsonData.searchHints[index];
+    if (!original) return;
+    const clone = JSON.parse(JSON.stringify(original));
+    const baseCode = original.code || 'SEARCHHINT';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set((jsonData.searchHints || []).map(h => h.code));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.code = candidate;
+    jsonData.searchHints.splice(index + 1, 0, clone);
+    currentEditIndex = index + 1;
+    editSearchHint(currentEditIndex);
+    showNotification('Cloned search hint. Please review and save.');
 }
 
 function editSearchHint(index) {

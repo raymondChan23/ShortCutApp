@@ -45,6 +45,7 @@ function renderRecommends() {
                     ${recommend.code}
                 </span>
                 <div class="action-buttons">
+                    <button class="btn-icon" onclick="cloneRecommend(${index})" title="Clone">📄</button>
                     <button class="btn-icon btn-edit" onclick="editRecommend(${index})" title="Edit">✏️</button>
                     <button class="btn-icon btn-delete" onclick="deleteRecommend(${index})" title="Delete">🗑️</button>
                 </div>
@@ -64,6 +65,25 @@ function renderRecommends() {
 
     emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
     updateStats(jsonData.recommends.length, visibleCount, 'Total Recommends:');
+}
+
+function cloneRecommend(index) {
+    const original = jsonData.recommends[index];
+    if (!original) return;
+    const clone = JSON.parse(JSON.stringify(original));
+    const baseCode = original.code || 'RECOMMEND';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set((jsonData.recommends || []).map(r => r.code));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.code = candidate;
+    jsonData.recommends.splice(index + 1, 0, clone);
+    currentEditIndex = index + 1;
+    editRecommend(currentEditIndex);
+    showNotification('Cloned recommend. Please review and save.');
 }
 
 function editRecommend(index) {

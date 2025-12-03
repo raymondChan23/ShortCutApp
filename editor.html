@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shortcuts Editor</title>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23FF7A1A'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='34' font-family='Arial,Helvetica,sans-serif' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAABa8rWbAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5QgFDRAPm0C3WAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCBieSBHaXRIdWIgQ29waWxvdGkAAABYSURBVFjD7dSxDQAgDETRnP9Zp2J8dCkCwq2IhQJwF6b2cQyWm9w6TQb6n3g2iQJQmYQmGxgDk0iQf7Qf9y6JcKDLk1JY3u1+0vG1mL8mXbJmQWmI9Tn1mZc0lq8m6f0Qq9wP2k3J6wEo7g5o1wA5oAAA==">
     <style>
         * {
             margin: 0;
@@ -542,9 +545,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 60px 40px;
+            padding: 30px 40px 60px;
             text-align: center;
-            max-width: 800px;
+            max-width: 100%;
+            width: 100%;
             margin: 0 auto;
         }
 
@@ -575,10 +579,11 @@
 
         .welcome-steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             width: 100%;
-            margin-bottom: 50px;
+            max-width: 1400px;
+            margin: 0 auto 50px;
         }
 
         .welcome-step {
@@ -648,9 +653,9 @@
             </div>
             <div class="header-actions">
                 <button class="btn" onclick="downloadProductionJson()">⬇️ Download</button>
-                <button class="btn" onclick="saveToFile()">💾 Save</button>
-                <input type="file" id="fileInput" accept=".json" style="display: none;" onchange="loadFile(event)">
                 <button class="btn" onclick="document.getElementById('fileInput').click()">📁 Load</button>
+                <button class="btn" onclick="saveToFile()">💾 Export</button>
+                <input type="file" id="fileInput" accept=".json" style="display: none;" onchange="loadFile(event)">
             </div>
         </div>
 
@@ -682,7 +687,7 @@
 
             <!-- Main Content Area -->
             <div class="content-wrapper">
-                <div class="toolbar">
+                <div class="toolbar" id="toolbar" style="display: none;">
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search shortcuts by code, title, or description...">
                 <span class="search-icon">🔍</span>
@@ -704,10 +709,6 @@
             <div id="welcomePage" class="welcome-page">
                 <div class="welcome-icon">🎯</div>
                 <h1 class="welcome-title">Welcome to Shortcuts Editor</h1>
-                <p class="welcome-subtitle">
-                    Get started by loading your shortcuts JSON file.<br>
-                    You can download the production version or load your own local file.
-                </p>
                 
                 <div class="welcome-steps">
                     <div class="welcome-step">
@@ -734,8 +735,8 @@
                     <div class="welcome-step">
                         <div class="step-number">4</div>
                         <div class="step-icon">💾</div>
-                        <div class="step-title">Save</div>
-                        <div class="step-desc">Save your changes to a new shortcuts.json file</div>
+                        <div class="step-title">Export</div>
+                        <div class="step-desc">Export your changes to a new shortcuts.json file</div>
                     </div>
                 </div>
                 
@@ -750,7 +751,7 @@
             </div>
         </div>
 
-        <div class="stats">
+            <div class="stats" id="statsBar" style="display: none;">
             <div class="stat-item">
                 <span class="stat-label" id="totalLabel">Total Shortcuts:</span>
                 <span class="stat-value" id="totalCount">0</span>
@@ -989,6 +990,11 @@
                 });
                 
                 renderCurrentTab();
+                // Show toolbar and stats after data load
+                const tb = document.getElementById('toolbar');
+                const sb = document.getElementById('statsBar');
+                if (tb) tb.style.display = 'flex';
+                if (sb) sb.style.display = 'flex';
                 
                 // Also save as file for user
                 const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });

@@ -35,6 +35,7 @@ function renderTags() {
             <div class="action-header">
                 <span class="action-code">${tag.code}</span>
                 <div class="action-buttons">
+                    <button class="btn-icon" onclick="cloneTag(${index})" title="Clone">📄</button>
                     <button class="btn-icon btn-edit" onclick="editTag(${index})" title="Edit">✏️</button>
                     <button class="btn-icon btn-delete" onclick="deleteTag(${index})" title="Delete">🗑️</button>
                 </div>
@@ -247,4 +248,23 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupColorPickers);
 } else {
     setupColorPickers();
+}
+
+function cloneTag(index) {
+    const original = jsonData.tags[index];
+    if (!original) return;
+    const clone = JSON.parse(JSON.stringify(original));
+    const baseCode = original.code || 'TAG';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set((jsonData.tags || []).map(t => t.code));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.code = candidate;
+    jsonData.tags.splice(index + 1, 0, clone);
+    currentEditIndex = index + 1;
+    editTag(currentEditIndex);
+    showNotification('Cloned tag. Please review and save.');
 }

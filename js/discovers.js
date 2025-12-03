@@ -27,13 +27,14 @@ function renderDiscovers() {
         
         if (matchesSearch) visibleCount++;
 
-        const iconEnHTML = discover.iconEn ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon EN:</strong><br><img src="${discover.iconEn}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; border: 1px solid #e0e0e0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${discover.iconEn}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${discover.iconEn}</a></div>` : '';
-        const iconZhHTML = discover.iconZh ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon ZH:</strong><br><img src="${discover.iconZh}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; border: 1px solid #e0e0e0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${discover.iconZh}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${discover.iconZh}</a></div>` : '';
+        const iconEnHTML = discover.iconEn ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon EN:</strong><br><img src="${discover.iconEn}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${discover.iconEn}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${discover.iconEn}</a></div>` : '';
+        const iconZhHTML = discover.iconZh ? `<div style="margin-top: 12px;"><strong style="font-size: 12px; color: #666;">Icon ZH:</strong><br><img src="${discover.iconZh}" style="width: 48px; height: 48px; margin: 8px 0; border-radius: 8px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><div style="display: none; font-size: 10px; color: #dc3545;">Failed to load image</div><a href="${discover.iconZh}" target="_blank" style="font-size: 10px; color: #667eea; word-break: break-all;">${discover.iconZh}</a></div>` : '';
 
         card.innerHTML = `
             <div class="action-header">
                 <span class="action-code">${discover.code}</span>
                 <div class="action-buttons">
+                    <button class="btn-icon" onclick="cloneDiscover(${index})" title="Clone">📄</button>
                     <button class="btn-icon btn-edit" onclick="editDiscover(${index})" title="Edit">✏️</button>
                     <button class="btn-icon btn-delete" onclick="deleteDiscover(${index})" title="Delete">🗑️</button>
                 </div>
@@ -53,6 +54,25 @@ function renderDiscovers() {
 
     emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
     updateStats(jsonData.discovers.length, visibleCount, 'Total Discovers:');
+}
+
+function cloneDiscover(index) {
+    const original = jsonData.discovers[index];
+    if (!original) return;
+    const clone = JSON.parse(JSON.stringify(original));
+    const baseCode = original.code || 'DISCOVER';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set((jsonData.discovers || []).map(d => d.code));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.code = candidate;
+    jsonData.discovers.splice(index + 1, 0, clone);
+    currentEditIndex = index + 1;
+    editDiscover(currentEditIndex);
+    showNotification('Cloned discover. Please review and save.');
 }
 
 function editDiscover(index) {

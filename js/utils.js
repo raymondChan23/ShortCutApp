@@ -48,6 +48,11 @@ function loadFile(event) {
                 if (welcomePage) {
                     welcomePage.style.display = 'none';
                 }
+                // Show toolbar and stats after data load
+                const tb = document.getElementById('toolbar');
+                const sb = document.getElementById('statsBar');
+                if (tb) tb.style.display = 'flex';
+                if (sb) sb.style.display = 'flex';
                 
                 // Switch to grouping tab if no tab is selected
                 if (!currentTab) {
@@ -135,11 +140,21 @@ function renderCurrentTab() {
     if (!currentTab) {
         if (welcomePage) welcomePage.style.display = 'flex';
         container.innerHTML = '';
+        // Keep toolbar and stats hidden while on welcome page
+        const tb = document.getElementById('toolbar');
+        const sb = document.getElementById('statsBar');
+        if (tb) tb.style.display = 'none';
+        if (sb) sb.style.display = 'none';
         return;
     }
     
     // Hide welcome page when viewing any tab
     if (welcomePage) welcomePage.style.display = 'none';
+    // Ensure toolbar and stats are visible when a tab is active
+    const tb = document.getElementById('toolbar');
+    const sb = document.getElementById('statsBar');
+    if (tb) tb.style.display = 'flex';
+    if (sb) sb.style.display = 'flex';
     
     if (currentTab === 'grouping') {
         container.className = '';

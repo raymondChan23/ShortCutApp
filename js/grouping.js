@@ -76,7 +76,7 @@ function renderGrouping() {
                             <th style="padding: 10px; text-align: left; font-size: 12px; color: #495057; width: 120px;">Tag</th>
                             <th style="padding: 10px; text-align: center; font-size: 12px; color: #495057; width: 80px;">Visible</th>
                             <th style="padding: 10px; text-align: center; font-size: 12px; color: #495057; width: 80px;">Pinned</th>
-                            <th style="padding: 10px; text-align: center; font-size: 12px; color: #495057; width: 60px;">Action</th>
+                            <th style="padding: 10px; text-align: center; font-size: 12px; color: #495057; width: 120px;">Action</th>
                         </tr>
                     </thead>
                     <tbody id="actions-tbody-${groupIndex}">
@@ -141,10 +141,13 @@ function renderGrouping() {
                                            onchange="updateGroupingAction(${groupIndex}, ${actionIndex}, 'pinned', this.checked)"
                                            style="width: 18px; height: 18px; cursor: pointer;">
                                 </td>
-                                <td style="padding: 10px; text-align: center;">
+                                <td style="padding: 10px; text-align: center; display:flex; gap:6px; justify-content:center;">
+                                    <button onclick="cloneGroupingAction(${groupIndex}, ${actionIndex})" 
+                                        style="background: #17a2b8; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 12px;"
+                                        title="Clone Row">🧬 Clone</button>
                                     <button onclick="deleteGroupingAction(${groupIndex}, ${actionIndex})" 
-                                            style="background: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 12px;"
-                                            title="Delete Action">🗑️</button>
+                                        style="background: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 12px;"
+                                        title="Delete Action">🗑️ Delete</button>
                                 </td>
                             </tr>
                         `).join('')}
@@ -269,6 +272,25 @@ function addGroupingAction(groupIndex) {
     jsonData.grouping[groupIndex].actions.push(newAction);
     renderGrouping();
     showNotification('New action added!');
+}
+
+function cloneGroupingAction(groupIndex, actionIndex) {
+    const group = jsonData.grouping[groupIndex];
+    if (!group || !Array.isArray(group.actions)) return;
+    const original = group.actions[actionIndex];
+    if (!original) return;
+
+    // Create a shallow clone of the row
+    const cloned = {
+        action: original.action,
+        visible: !!original.visible,
+        pinned: !!original.pinned
+    };
+
+    // Insert clone right after the original
+    group.actions.splice(actionIndex + 1, 0, cloned);
+    renderGrouping();
+    showNotification('Row cloned!');
 }
 
 function addNewGroupingCategory() {
