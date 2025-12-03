@@ -1,0 +1,1969 @@
+{
+    "actions": [
+        {
+            "code": "ENQUIRY",
+            "titleEn": "Transactions & balance",
+            "titleZh": "消費紀錄及餘額",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transaction_balance_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transaction_balance_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Card Enquiry",
+                "消費紀錄及餘額"
+            ],
+            "urlEn": "https://app.octopus.com.hk/enquiry/main",
+            "urlZh": "https://app.octopus.com.hk/enquiry/main",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "IMAGESTORE",
+            "titleEn": "Card Image Store",
+            "titleZh": "八達通卡面商店",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/card_image_store_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/card_image_store_circle_icon_64.png",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Octopus Card Image Store",
+                "八達通卡面商店",
+                "Card Art",
+                "Card Face",
+                "Card Image",
+                "卡面"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cardArt/home",
+            "urlZh": "https://app.octopus.com.hk/cardArt/home",
+            "showOnAllPlatforms": true,
+            "descEn": "Style your Mobile Octopus",
+            "descZh": "為你的手機八達通加入個性"
+        },
+        {
+            "code": "EASYEARN",
+            "titleEn": "Rewards & offers",
+            "titleZh": "獎賞及優惠",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_earn_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_earn_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Easy Earn",
+                "好賞嘟",
+                "stamp",
+                "印花",
+                "coupon",
+                "優惠劵"
+            ],
+            "urlEn": "https://app.octopus.com.hk/offers",
+            "urlZh": "https://app.octopus.com.hk/offers",
+            "showOnAllPlatforms": true,
+            "descEn": "Easy Earn: Get eStamps and discount",
+            "descZh": "於優惠商戶消費以賺取電子印花"
+        },
+        {
+            "code": "MEMBERSHIP",
+            "titleEn": "Join merchant membership",
+            "titleZh": "加入商戶會員計劃",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/merchant_memberships_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/merchant_memberships_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Membership",
+                "商戶會員計劃"
+            ],
+            "urlEn": "https://app.octopus.com.hk/_merchant_memberships?source=quick_action",
+            "urlZh": "https://app.octopus.com.hk/_merchant_memberships?source=quick_action",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "FPS",
+            "titleEn": "Set up & manage FPS",
+            "titleZh": "設定及管理轉數快",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/fps_top_up_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/fps_top_up_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Top up via FPS",
+                "轉數快增值",
+                "銀行app增值"
+            ],
+            "urlEn": "https://app.octopus.com.hk/fps",
+            "urlZh": "https://app.octopus.com.hk/fps",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "FPSAAVS",
+            "titleEn": "Auto top-up via FPS",
+            "titleZh": "自動增值服務 (經轉數快)",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_fps_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_fps_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "AAVS",
+                "自動增值服務",
+                "Automatic Add Value Service",
+                "FPS",
+                "轉數快",
+                "增值",
+                "add value",
+                "top-up",
+                "top up",
+                "reload",
+                "FPS Top Up",
+                "自動增值服務（經轉數快）"
+            ],
+            "urlEn": "https://app.octopus.com.hk/f_aavs",
+            "urlZh": "https://app.octopus.com.hk/f_aavs",
+            "showOnAllPlatforms": true,
+            "descEn": "Automatic add value services via FPS",
+            "descZh": "透過轉數快自動增值"
+        },
+        {
+            "code": "AAVS",
+            "titleEn": "Auto top-up via credit card",
+            "titleZh": "自動增值服務 (經信用卡)",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "AAVS",
+                "自動增值服務",
+                "Automatic Add Value Service",
+                "增值",
+                "add value",
+                "top-up",
+                "top up",
+                "reload"
+            ],
+            "urlEn": "https://app.octopus.com.hk/aavs/",
+            "urlZh": "https://app.octopus.com.hk/aavs/",
+            "showOnAllPlatforms": true,
+            "descEn": "Automatic add value service via credit card",
+            "descZh": "透過信用卡自動增值"
+        },
+        {
+            "code": "ONLINEPAYMENT",
+            "titleEn": "Online merchants directory",
+            "titleZh": "網上商戶目錄",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/online_payment_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/online_payment_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Online Payment",
+                "網上付款"
+            ],
+            "urlEn": "https://app.octopus.com.hk/mer",
+            "urlZh": "https://app.octopus.com.hk/mer",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "PTFSS",
+            "titleEn": "Collect transport subsidy",
+            "titleZh": "領取交通津貼",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/ptfss_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/ptfss_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Transport Subsidy",
+                "交通補貼",
+                "交通津貼"
+            ],
+            "urlEn": "https://app.octopus.com.hk/ptfss",
+            "urlZh": "https://app.octopus.com.hk/ptfss",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "PASS",
+            "titleEn": "Buy transport passes",
+            "titleZh": "買交通月票",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transport_passes_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transport_passes_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Transport Passes",
+                "交通月票",
+                "Monthly Passes"
+            ],
+            "urlEn": "https://app.octopus.com.hk/menu/pass",
+            "urlZh": "https://app.octopus.com.hk/menu/pass",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "EASYPARK",
+            "titleEn": "Manage parking",
+            "titleZh": "管理泊車服務",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_park_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_park_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Easy Park",
+                "泊車"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cpff",
+            "urlZh": "https://app.octopus.com.hk/cpff",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "HKETOLL",
+            "titleEn": "HKeToll",
+            "titleZh": "易通行",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hketoll_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hketoll_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "HKeToll",
+                "易通行",
+                "Tunnel",
+                "隧道"
+            ],
+            "urlEn": "https://app.octopus.com.hk/mer/370",
+            "urlZh": "https://app.octopus.com.hk/mer/370",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "HKEMETER",
+            "titleEn": "HKeMeter",
+            "titleZh": "入錶易",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hkemeter_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hkemeter_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "HKeMeter",
+                "入錶易",
+                "咪錶"
+            ],
+            "urlEn": "https://app.octopus.com.hk/mer/180",
+            "urlZh": "https://app.octopus.com.hk/mer/180",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "CUP_QR_SCANNER",
+            "titleEn": "Global payment via UnionPay",
+            "titleZh": "銀聯全球付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vuc_qr_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vuc_qr_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "UnionPay",
+                "銀聯"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cup/qrCode",
+            "urlZh": "https://app.octopus.com.hk/cup/qrCode",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "WEIXINPAY",
+            "titleEn": "China payment via Weixin Pay",
+            "titleZh": "中國內地微信支付",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/weixinpay_scanner_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/weixinpay_scanner_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Weixin Pay",
+                "微信支付",
+                "China",
+                "中國"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cup/weixinpay",
+            "urlZh": "https://app.octopus.com.hk/cup/weixinpay",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "ZEROPAY",
+            "titleEn": "South Korea payment via ZeroPay",
+            "titleZh": "韓國 ZeroPay 付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/zeropay_scanner_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/zeropay_scanner_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "ZEROPAY",
+                "Korea",
+                "韓國"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cup/zeropay",
+            "urlZh": "https://app.octopus.com.hk/cup/zeropay",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "PROMPTPAY",
+            "titleEn": "Thailand payment via PromptPay",
+            "titleZh": "泰國 PromptPay 付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/promptpay_scanner_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/promptpay_scanner_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "PromptPay",
+                "Thailand",
+                "泰國"
+            ],
+            "urlEn": "https://app.octopus.com.hk/qrscanner?type=promptpay",
+            "urlZh": "https://app.octopus.com.hk/qrscanner?type=promptpay",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "HOPEGOO",
+            "titleEn": "Book high speed rail",
+            "titleZh": "買高鐵火車票",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hopegoo_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hopegoo_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "HopeGoo",
+                "High Speed Rail",
+                "Train",
+                "Booking",
+                "Ticketing",
+                "高鐵",
+                "火車",
+                "預訂",
+                "車票"
+            ],
+            "urlEn": "https://app.octopus.com.hk/h5/hopegoo",
+            "urlZh": "https://app.octopus.com.hk/h5/hopegoo",
+            "showOnAllPlatforms": true,
+            "descEn": "Partnered with HOPEGOO",
+            "descZh": "與 HOPEGOO 合作"
+        },
+        {
+            "code": "EASYRIDE",
+            "titleEn": "Get an Easy Ride (Beta)",
+            "titleZh": "Call車易 (體驗版)",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_ride_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_ride_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Easy Ride",
+                "Ride hailing",
+                "Travel",
+                "Booking",
+                "Call 車易",
+                "Singapore",
+                "Malaysia",
+                "Thailand",
+                "Vietnam",
+                "叫車",
+                "旅遊",
+                "預訂",
+                "新加坡",
+                "馬來西亞",
+                "泰國",
+                "越南"
+            ],
+            "urlEn": "https://app.octopus.com.hk/h5/heycars",
+            "urlZh": "https://app.octopus.com.hk/h5/heycars",
+            "showOnAllPlatforms": true,
+            "descEn": "Ride hailing for local and overseas",
+            "descZh": "本地及海外網約車服務"
+        },
+        {
+            "code": "GOOGLEPLAY",
+            "titleEn": "Google Play",
+            "titleZh": "Play 商店",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/google_play_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/google_play_circle_icon_64.png",
+            "platforms": [
+                "ARD"
+            ],
+            "searchLabels": [
+                "Google Play"
+            ],
+            "urlEn": "https://app.octopus.com.hk/mer/121",
+            "urlZh": "https://app.octopus.com.hk/mer/121",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "ONLINESHOP",
+            "titleEn": "Octopus Online Shop",
+            "titleZh": "網上商店",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/octopus_online_shop_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/octopus_online_shop_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Online Shop",
+                "網上商店"
+            ],
+            "urlEn": "https://onlineshop.octopus.com.hk/cart/index.jsp?language=en",
+            "urlZh": "https://onlineshop.octopus.com.hk/cart/index.jsp?language=zh_TW",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "TELECOM",
+            "titleEn": "Bill payment",
+            "titleZh": "繳付賬單",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/public_service_telecom_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/public_service_telecom_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Government bills",
+                "China Mobile",
+                "Hong Kong Broadband",
+                "HKBN",
+                "Smartone",
+                "Birdie",
+                "Kartu As2in1",
+                "Sahabat Setia Smartone",
+                "ValueGB",
+                "Barkadahan sa Smartone"
+            ],
+            "urlEn": "https://app.octopus.com.hk/mer/cat/TEL",
+            "urlZh": "https://app.octopus.com.hk/mer/cat/TEL",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "WALLET",
+            "titleEn": "Octopus Wallet",
+            "titleZh": "八達通銀包",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/wallet_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/wallet_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Wallet",
+                "銀包",
+                "expense",
+                "開支"
+            ],
+            "urlEn": "https://app.octopus.com.hk/travelWallet",
+            "urlZh": "https://app.octopus.com.hk/travelWallet",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "VCC",
+            "titleEn": "Octopus Mastercard",
+            "titleZh": "八達通 Mastercard",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vcc_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vcc_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Mastercard",
+                "萬事達卡",
+                "Online Payment",
+                "網上付款",
+                "Prepaid Card",
+                "預付卡"
+            ],
+            "urlEn": "https://app.octopus.com.hk/vcc",
+            "urlZh": "https://app.octopus.com.hk/vcc",
+            "showOnAllPlatforms": true,
+            "descEn": "A secured prepaid Mastercard",
+            "descZh": "安全可靠的預付Mastercard"
+        },
+        {
+            "code": "CUP",
+            "titleEn": "Octopus UnionPay Card",
+            "titleZh": "八達通銀聯卡",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vuc_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vuc_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "UnionPay Card",
+                "銀聯卡"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cup",
+            "urlZh": "https://app.octopus.com.hk/cup",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "ADDMONEY",
+            "titleEn": "Add money to Wallet",
+            "titleZh": "入錢至銀包",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_add_money_68.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_add_money_68.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Add money to Wallet",
+                "入錢至銀包",
+                "增值銀包",
+                "top up wallet"
+            ],
+            "urlEn": "https://app.octopus.com.hk/menu/wallet_topup",
+            "urlZh": "https://app.octopus.com.hk/menu/wallet_topup",
+            "showOnAllPlatforms": true,
+            "descEn": "Top up your Octopus Wallet",
+            "descZh": "為你的八達通銀包增值"
+        },
+        {
+            "code": "P2P",
+            "titleEn": "Transfer to friends",
+            "titleZh": "轉賬給朋友",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transfer_to_friend_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transfer_to_friend_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Transfer to Friends",
+                "轉賬給朋友",
+                "P2P 畀錢",
+                "過數給朋友"
+            ],
+            "urlEn": "https://app.octopus.com.hk/p2p/pay",
+            "urlZh": "https://app.octopus.com.hk/p2p/pay",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "COLLECT",
+            "titleEn": "Request Payment",
+            "titleZh": "向朋友收錢",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/request_payment_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/request_payment_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Request Payment",
+                "收錢",
+                "收款"
+            ],
+            "urlEn": "https://app.octopus.com.hk/p2p/collect",
+            "urlZh": "https://app.octopus.com.hk/p2p/collect",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "ACT_AND_TXNS",
+            "titleEn": "Activity & Transactions",
+            "titleZh": "最新動態及交易紀錄",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_activity_transactions_68.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_activity_transactions_68.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Activity and Transaction",
+                "最新動態及交易紀錄"
+            ],
+            "urlEn": "https://app.octopus.com.hk/travelWallet/activity_txn",
+            "urlZh": "https://app.octopus.com.hk/travelWallet/activity_txn",
+            "showOnAllPlatforms": true,
+            "descEn": "Check your transaction record",
+            "descZh": "查閱你的交易記錄"
+        },
+        {
+            "code": "TRANSFER_TO_CARD",
+            "titleEn": "Transfer to Octopus",
+            "titleZh": "轉賬至八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_transfer_octopus_68.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_transfer_octopus_68.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Transfer to Octopus",
+                "轉賬至八達通"
+            ],
+            "urlEn": "https://app.octopus.com.hk/travelWallet/card_topup",
+            "urlZh": "https://app.octopus.com.hk/travelWallet/card_topup",
+            "showOnAllPlatforms": true,
+            "descEn": "Instant tap to pay",
+            "descZh": "即拍即付"
+        },
+        {
+            "code": "ELAISEE",
+            "titleEn": "eLaisee",
+            "titleZh": "電子利是",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/elaisee_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/elaisee_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "eLaisee",
+                "e利是",
+                "red pocket",
+                "紅包"
+            ],
+            "urlEn": "https://app.octopus.com.hk/elaisee/home",
+            "urlZh": "https://app.octopus.com.hk/elaisee/home",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "JOYYOU",
+            "titleEn": "JoyYou card application",
+            "titleZh": "申請樂悠咭",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/joyyou_application_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/joyyou_application_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "JoyYou Card Application",
+                "申請樂悠咭"
+            ],
+            "urlEn": "https://app.octopus.com.hk/silver",
+            "urlZh": "https://app.octopus.com.hk/silver",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "MTRSTUDENT",
+            "titleEn": "MTR Student Travel Scheme application",
+            "titleZh": "申請港鐵學生乘車優惠計劃",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/mtr_student_scheme_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/mtr_student_scheme_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "MTR Student Travel Scheme",
+                "港鐵學生乘車優惠計劃",
+                "學生",
+                "Student"
+            ],
+            "urlEn": "https://app.octopus.com.hk/msca/actionsheet",
+            "urlZh": "https://app.octopus.com.hk/msca/actionsheet",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "PCARD",
+            "titleEn": "Personalised Octopus",
+            "titleZh": "個人八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/pcard_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/pcard_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Personalised Octopus",
+                "個人八達通",
+                "申請個人八達通",
+                "Personalised Octopus Application"
+            ],
+            "urlEn": "https://app.octopus.com.hk/epca/actionsheet",
+            "urlZh": "https://app.octopus.com.hk/epca/actionsheet",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "LOSTCARD",
+            "titleEn": "Report a lost card",
+            "titleZh": "報失八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/report_lost_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/report_lost_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Lost Reporting",
+                "報失八達通",
+                "Lost Octopus",
+                "八達通報失"
+            ],
+            "urlEn": null,
+            "urlZh": null,
+            "showOnAllPlatforms": true,
+            "urlEnAndroid": "https://www.octopuscards.com/onlineform/report-lost/en/step1.jsp?origin=ocl_app_android",
+            "urlZhAndroid": "https://www.octopuscards.com/onlineform/report-lost/tc/step1.jsp?origin=ocl_app_android",
+            "urlEnHuawei": "https://www.octopuscards.com/onlineform/report-lost/en/step1.jsp?origin=ocl_app_android",
+            "urlZhHuawei": "https://www.octopuscards.com/onlineform/report-lost/tc/step1.jsp?origin=ocl_app_android",
+            "urlEnIos": "https://www.octopuscards.com/onlineform/report-lost/en/step1.jsp?origin=ocl_app_ios",
+            "urlZhIos": "https://www.octopuscards.com/onlineform/report-lost/tc/step1.jsp?origin=ocl_app_ios"
+        },
+        {
+            "code": "PCARDREPLACE",
+            "titleEn": "Replace a Personalised Mobile Octopus",
+            "titleZh": "補領個人手機八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/p_mo_replacement_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/p_mo_replacement_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Personalised Mobile Octopus Replacement",
+                "補領個人手機八達通"
+            ],
+            "urlEn": "https://app.octopus.com.hk/pcard/replace",
+            "urlZh": "https://app.octopus.com.hk/pcard/replace",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "REWARD",
+            "titleEn": "Collect Octopus Dollar",
+            "titleZh": "領取獎賞/退款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/collect_refund_rewards_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/collect_refund_rewards_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Collect Octopus Refund / Rewards",
+                "領取獎賞/退款"
+            ],
+            "urlEn": "https://app.octopus.com.hk/dollar/collect",
+            "urlZh": "https://app.octopus.com.hk/dollar/collect",
+            "showOnAllPlatforms": true,
+            "descEn": "For refund and rewards"
+        },
+        {
+            "code": "FORM",
+            "titleEn": "Request refund",
+            "titleZh": "申請退款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/refund_form_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/refund_form_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Online Refund Form",
+                "辦理退款",
+                "Refund Application",
+                "退款申請"
+            ],
+            "urlEn": "https://www.octopus.com.hk/en/consumer/customer-service/refund/index.html",
+            "urlZh": "https://www.octopus.com.hk/tc/consumer/customer-service/refund/index.html",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "FIND",
+            "titleEn": "Find Nearest Octopus Service Point",
+            "titleZh": "就近八達通服務站",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_service_point_68.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/icn_circle_service_point_68.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Find Nearest Octopus Service Point",
+                "搜尋就近八達通服務站",
+                "Octopus Service Point",
+                "八達通服務站"
+            ],
+            "urlEn": "https://wa.me/85260377021?text=space",
+            "urlZh": "https://wa.me/85260377021?text=space",
+            "showOnAllPlatforms": true,
+            "descEn": "Find the nearest location via WhatsApp",
+            "descZh": "以WhatsApp發送位置搜尋最近地點"
+        },
+        {
+            "code": "CONTACTUS",
+            "titleEn": "Contact Us",
+            "titleZh": "聯絡我們",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/contact_us_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/contact_us_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Contact Us",
+                "聯絡我們",
+                "Customer Service",
+                "客戶服務"
+            ],
+            "urlEn": null,
+            "urlZh": null,
+            "showOnAllPlatforms": true,
+            "urlEnAndroid": "https://wa.me/85260377021?text=Talk%20to%20Helen%20now",
+            "urlZhAndroid": "https://wa.me/85260377021?text=%E8%AB%8B%E6%8C%89%E7%99%BC%E9%80%81%E5%90%8CHelen%E9%96%8B%E5%A7%8B%E5%B0%8D%E8%A9%B1",
+            "urlEnHuawei": "https://wa.me/85260377021?text=Talk%20to%20Helen%20now",
+            "urlZhHuawei": "https://wa.me/85260377021?text=%E8%AB%8B%E6%8C%89%E7%99%BC%E9%80%81%E5%90%8CHelen%E9%96%8B%E5%A7%8B%E5%B0%8D%E8%A9%B1",
+            "urlEnIos": "https://wa.me/85260377021?text=Ask%20Helen%20now",
+            "urlZhIos": "https://wa.me/85260377021?text=%E8%AB%8B%E6%8C%89%E7%99%BC%E9%80%81%E5%90%8CHelen%E9%96%8B%E5%A7%8B%E5%B0%8D%E8%A9%B1"
+        },
+        {
+            "code": "MANAGE_CARD",
+            "titleEn": "Manage Card",
+            "titleZh": "管理八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/manage_card_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/manage_card_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Manage Card",
+                "管理八達通",
+                "Card",
+                "Octopus",
+                "八達通"
+            ],
+            "urlEn": "https://app.octopus.com.hk/card/manage",
+            "urlZh": "https://app.octopus.com.hk/card/manage",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "TRAVEL",
+            "titleEn": "Pay overseas",
+            "titleZh": "海外商戶支付",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/pay_overseas_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/pay_overseas_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Travel",
+                "overseas",
+                "旅遊",
+                "海外",
+                "海外商戶"
+            ],
+            "urlEn": "https://app.octopus.com.hk/travel",
+            "urlZh": "https://app.octopus.com.hk/travel",
+            "showOnAllPlatforms": true,
+            "tag": {
+                "code": "NEW"
+            }
+        },
+        {
+            "code": "REWARDBUY",
+            "titleEn": "Buy coupons",
+            "titleZh": "好賞買優惠券",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/rewardbuy_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/rewardbuy_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "RewardBuy",
+                "好賞買",
+                "Coupon",
+                "優惠劵",
+                "折扣",
+                "Discount"
+            ],
+            "urlEn": "https://app.octopus.com.hk/h5/rewardbuy",
+            "urlZh": "https://app.octopus.com.hk/h5/rewardbuy",
+            "showOnAllPlatforms": true,
+            "descEn": "Show hot deals via RewardBuy",
+            "descZh": "人氣商店超值電子券, 即購即用, 盡在RewardBuy！"
+        },
+        {
+            "code": "APPLESERVICES",
+            "titleEn": "Apple Services",
+            "titleZh": "Apple 服務",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/apple_service_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/apple_service_circle_icon_64.png",
+            "platforms": [
+                "IOS"
+            ],
+            "searchLabels": [
+                "Apple Services",
+                "Apple 服務",
+                "App Store"
+            ],
+            "urlEn": "https://app.octopus.com.hk/acclink/landing",
+            "urlZh": "https://app.octopus.com.hk/acclink/landing",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "EVENTS_TICKETING",
+            "titleEn": "Events & ticketing",
+            "titleZh": "活動及門券",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/events_ticketing_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/events_ticketing_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Events",
+                "Festival",
+                "節慶",
+                "節日",
+                "活動"
+            ],
+            "urlEn": "https://app.octopus.com.hk/menu/ticket",
+            "urlZh": "https://app.octopus.com.hk/menu/ticket",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "OCEANPARK",
+            "titleEn": "Ocean Park Tickets",
+            "titleZh": "香港海洋公園門票",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/op_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/op_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "海洋公園",
+                "Ocean Park",
+                "門票",
+                "Tickets"
+            ],
+            "urlEn": "https://app.octopus.com.hk/h5/oceanpark",
+            "urlZh": "https://app.octopus.com.hk/h5/oceanpark",
+            "showOnAllPlatforms": true,
+            "descEn": "Experience adventures and attractions!",
+            "descZh": "體驗難忘既冒險同景點!"
+        },
+        {
+            "code": "CROSS_BORDER_BUS",
+            "titleEn": "Book cross-border bus",
+            "titleZh": "買直通巴士車票",
+            "iconEn": null,
+            "iconZh": null,
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "bus",
+                "cross border bus",
+                "巴士",
+                "跨境巴士",
+                "過境巴士"
+            ],
+            "urlEn": null,
+            "urlZh": null,
+            "showOnAllPlatforms": true,
+            "descEn": "via China Travel Service (HK)",
+            "descZh": "與香港中國旅行社合作"
+        },
+        {
+            "code": "PAY_PAY",
+            "titleEn": "Japan payment via PayPay",
+            "titleZh": "日本 PayPay 付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/paypay_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/paypay_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "PayPay",
+                "Japan",
+                "日本"
+            ],
+            "urlEn": "https://app.octopus.com.hk/hivex/paypay",
+            "urlZh": "https://app.octopus.com.hk/hivex/paypay",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "OCLBIO",
+            "titleEn": "FAQ",
+            "titleZh": "常見問題",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/information_service_platform_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/information_service_platform_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "有用功能",
+                "Useful Features",
+                "最新資訊",
+                "Latest Information",
+                "資訊頻道",
+                "Information Channel"
+            ],
+            "urlEn": "https://octopushk.link/microsite",
+            "urlZh": "https://octopushk.link/microsite",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "CITI_OCTOPUS",
+            "titleEn": "Citi Octopus on iPhone",
+            "titleZh": "Citi八達通在iPhone",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/citi_octopus_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/citi_octopus_circle_icon_64.png",
+            "platforms": [
+                "IOS"
+            ],
+            "searchLabels": [
+                "Citi Octopus on iPhone",
+                "Citi八達通在iPhone"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cobrand/806",
+            "urlZh": "https://app.octopus.com.hk/cobrand/806",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "TAOBAO",
+            "titleEn": "Taobao discount",
+            "titleZh": "淘寶優惠",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/taobao_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/taobao_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Taobao discount",
+                "淘寶優惠"
+            ],
+            "urlEn": "https://app.octopus.com.hk/offers/promotion/2599",
+            "urlZh": "https://app.octopus.com.hk/offers/promotion/2599",
+            "showOnAllPlatforms": true
+        },
+        {
+            "code": "MO_PROVISION",
+            "titleEn": "Add Mobile Octopus",
+            "titleZh": "加入手機八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/add_mo_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/add_mo_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "Add Mobile Octopus",
+                "加入手機八達通"
+            ],
+            "urlEn": null,
+            "urlZh": null,
+            "showOnAllPlatforms": true,
+            "urlEnAndroid": "https://app.octopus.com.hk/ao/provision",
+            "urlZhAndroid": "https://app.octopus.com.hk/ao/provision",
+            "urlEnHuawei": "https://app.octopus.com.hk/ao/provision",
+            "urlZhHuawei": "https://app.octopus.com.hk/ao/provision",
+            "urlEnIos": "https://app.octopus.com.hk/so/provision",
+            "urlZhIos": "https://app.octopus.com.hk/so/provision"
+        },
+        {
+            "code": "AAVS_UPGRADE",
+            "titleEn": "Upgrade Auto-reload amount",
+            "titleZh": "提升自動增值額",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_upgrade_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_upgrade_circle_icon_64.png",
+            "platforms": [
+                "ARD",
+                "IOS",
+                "HWI"
+            ],
+            "searchLabels": [
+                "AAVS upgrade",
+                "Upgrade Auto-reload amount",
+                "提升自動增值額"
+            ],
+            "urlEn": "https://app.octopus.com.hk/aavs/upgrade/instant",
+            "urlZh": "https://app.octopus.com.hk/aavs/upgrade/instant",
+            "showOnAllPlatforms": true
+        }
+    ],
+    "categories": [
+        {
+            "code": "CARD_MANAGEMENT",
+            "titleEn": "My Octopus",
+            "titleZh": "我的八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_my_octopus_graphic_72x52.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_my_octopus_graphic_72x52.png",
+            "searchLabels": [
+                "Card Management"
+            ]
+        },
+        {
+            "code": "TRANSPORT",
+            "titleEn": "Transport Services",
+            "titleZh": "交通服務",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_transport_service_graphic_72x52.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_transport_service_graphic_72x52.png",
+            "searchLabels": null
+        },
+        {
+            "code": "DRIVER",
+            "titleEn": "Driver's Corner",
+            "titleZh": "司機專用",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_driver_corner_graphic_72.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_driver_corner_graphic_72.png",
+            "searchLabels": null
+        },
+        {
+            "code": "TRAVEL",
+            "titleEn": "Travel",
+            "titleZh": "旅遊",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_travel_graphic_72.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_travel_graphic_72.png",
+            "searchLabels": null
+        },
+        {
+            "code": "ONLINE_PAYMENT",
+            "titleEn": "Online Payment",
+            "titleZh": "網上付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_lifestyle_offers_graphic_72.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_lifestyle_offers_graphic_72.png",
+            "searchLabels": null
+        },
+        {
+            "code": "OCTOPUS_WALLET",
+            "titleEn": "Octopus Wallet",
+            "titleZh": "八達通銀包",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_wallet_graphic_72.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_wallet_graphic_72.png",
+            "searchLabels": null
+        },
+        {
+            "code": "CUSTOMER_SERVICE",
+            "titleEn": "Help Centre",
+            "titleZh": "服務中心",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_help_centre_graphic_72x52.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_help_centre_graphic_72x52.png",
+            "searchLabels": null
+        },
+        {
+            "code": "TRANSFER_PAY",
+            "titleEn": "Transfer & Pay",
+            "titleZh": "轉賬及付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_transfer_pay_graphic_72x52.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_transfer_pay_graphic_72x52.png",
+            "searchLabels": null
+        },
+        {
+            "code": "LIFESTYLE_OFFER",
+            "titleEn": "Lifestyle & Offers",
+            "titleZh": "生活及優惠",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_lifestyle_offers_graphic_72x52.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/shortcuts/all_services_lifestyle_offers_graphic_72x52.png",
+            "searchLabels": null
+        }
+    ],
+    "grouping": [
+        {
+            "category": "CARD_MANAGEMENT",
+            "actions": [
+                {
+                    "action": "ENQUIRY",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "FPSAAVS",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "IMAGESTORE",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "FPS",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "AAVS",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "AAVS_UPGRADE",
+                    "visible": false,
+                    "pinned": false
+                },
+                {
+                    "action": "REWARD",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "PCARD",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "MO_PROVISION",
+                    "visible": false,
+                    "pinned": false
+                },
+                {
+                    "action": "CITI_OCTOPUS",
+                    "visible": false,
+                    "pinned": false
+                }
+            ]
+        },
+        {
+            "category": "TRANSFER_PAY",
+            "actions": [
+                {
+                    "action": "P2P",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "TELECOM",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "TRAVEL",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "WALLET",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "VCC",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "CUP",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "COLLECT",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "ELAISEE",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "PAY_PAY",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "CUP_QR_SCANNER",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "WEIXINPAY",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "ZEROPAY",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "PROMPTPAY",
+                    "visible": true,
+                    "pinned": false
+                }
+            ]
+        },
+        {
+            "category": "LIFESTYLE_OFFER",
+            "actions": [
+                {
+                    "action": "EVENTS_TICKETING",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "REWARDBUY",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "EASYEARN",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "ONLINESHOP",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "MEMBERSHIP",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "APPLESERVICES",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "GOOGLEPLAY",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "ONLINEPAYMENT",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "TAOBAO",
+                    "visible": false,
+                    "pinned": false
+                }
+            ]
+        },
+        {
+            "category": "TRANSPORT",
+            "actions": [
+                {
+                    "action": "EASYRIDE",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "PTFSS",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "EASYPARK",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "PASS",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "HOPEGOO",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "HKETOLL",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "HKEMETER",
+                    "visible": true,
+                    "pinned": false
+                }
+            ]
+        },
+        {
+            "category": "CUSTOMER_SERVICE",
+            "actions": [
+                {
+                    "action": "LOSTCARD",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "FORM",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "MTRSTUDENT",
+                    "visible": true,
+                    "pinned": true
+                },
+                {
+                    "action": "JOYYOU",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "PCARDREPLACE",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "OCLBIO",
+                    "visible": true,
+                    "pinned": false
+                },
+                {
+                    "action": "CONTACTUS",
+                    "visible": true,
+                    "pinned": false
+                }
+            ]
+        }
+    ],
+    "discovers": [
+        {
+            "code": "HOPEGOO",
+            "titleEn": "High Speed Rail online booking",
+            "titleZh": "高鐵火車票線上預訂",
+            "descEn": "Speedy ticketing via HopeGoo",
+            "descZh": "HopeGoo方便快速訂票，立即出發",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hopegoo_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/hopegoo_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/h5/hopegoo",
+            "urlZh": "https://app.octopus.com.hk/h5/hopegoo",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "FPS",
+            "titleEn": "Top up via FPS",
+            "titleZh": "「轉數快」增值",
+            "descEn": "Go cashless and top up your Octopus anytime, anywhere with your mobile",
+            "descZh": "毋須接觸現金，隨時隨地用手機增值八達通",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/fps_top_up_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/fps_top_up_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/fps",
+            "urlZh": "https://app.octopus.com.hk/fps",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "FPSAAVS",
+            "titleEn": "Automatic Add Value Service (via FPS)",
+            "titleZh": "自動增值服務（經轉數快）",
+            "descEn": "Activate instantly with just a few clicks! Easy set! Easy go!",
+            "descZh": "一撳啟動即用！Easy set! Easy go!",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_fps_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_fps_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/f_aavs",
+            "urlZh": "https://app.octopus.com.hk/f_aavs",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "AAVS",
+            "titleEn": "Automatic Add Value Service (via Credit Card)",
+            "titleZh": "自動增值服務（經信用卡）",
+            "descEn": "No need to queue up again to top up; and earn bonus points or miles!",
+            "descZh": "唔使再排隊增值，仲可賺信用卡積分或哩數！",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/aavs/",
+            "urlZh": "https://app.octopus.com.hk/aavs/",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "AAVS_UPGRADE",
+            "titleEn": "Upgrade Auto-reload amount",
+            "titleZh": "提升自動增值額",
+            "descEn": "Ride, dine and shop, wherever you want to tap!",
+            "descZh": "搭車或零售消費都更爽更快!",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_upgrade_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/aavs_credit_card_upgrade_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/aavs/upgrade/instant",
+            "urlZh": "https://app.octopus.com.hk/aavs/upgrade/instant",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "CUP",
+            "titleEn": "Octopus UnionPay Card",
+            "titleZh": "八達通銀聯卡",
+            "descEn": "Pay with your mobile on the Mainland and around the globe",
+            "descZh": "於內地以至全球用手機輕鬆消費",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vuc_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vuc_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/cup",
+            "urlZh": "https://app.octopus.com.hk/cup",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "VCC",
+            "titleEn": "Octopus Mastercard",
+            "titleZh": "八達通 Mastercard",
+            "descEn": "Pay online and in-store with ease and peace of mind",
+            "descZh": "於網上、零售商戶輕鬆安心付款",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vcc_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/vcc_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/vcc",
+            "urlZh": "https://app.octopus.com.hk/vcc",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "PROMPTPAY",
+            "titleEn": "PromptPay QR Payment",
+            "titleZh": "PromptPay 二維碼支付",
+            "descEn": "Scan to pay at 8 million merchants in Thailand",
+            "descZh": "於泰國一掃即付800萬商戶",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/promptpay_scanner_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/promptpay_scanner_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/qrscanner?type=promptpay",
+            "urlZh": "https://app.octopus.com.hk/qrscanner?type=promptpay",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "EASYEARN",
+            "titleEn": "Easy Earn",
+            "titleZh": "好賞嘟",
+            "descEn": "Earn eStamps automatically when you pay at participating merchants",
+            "descZh": "於參與商戶付款，自動賺取電子印花",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_earn_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_earn_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/offers",
+            "urlZh": "https://app.octopus.com.hk/offers",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "MEMBERSHIP",
+            "titleEn": "Merchant Memberships",
+            "titleZh": "商戶會員計劃",
+            "descEn": "Enrol in / link with merchant membership programmes using your Octopus number to earn rewards with ease",
+            "descZh": "憑八達通號碼登記/連結商戶會員計劃，輕鬆賺取奬賞",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/merchant_memberships_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/merchant_memberships_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/_merchant_memberships?source=quick_action",
+            "urlZh": "https://app.octopus.com.hk/_merchant_memberships?source=quick_action",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "IMAGESTORE",
+            "titleEn": "Octopus Card Image Store",
+            "titleZh": "八達通卡面商店",
+            "descEn": "Style your Octopus on Mobile with your favourite card image",
+            "descZh": "為你的手機八達通，加入你的個性",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/card_image_store_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/card_image_store_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/cardArt/home",
+            "urlZh": "https://app.octopus.com.hk/cardArt/home",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "PASS",
+            "titleEn": "Transport Passes",
+            "titleZh": "交通月票",
+            "descEn": "Purchase or enquire about MTR, bus and ferry monthly passes",
+            "descZh": "購買或查詢港鐵、巴士及渡輪月票",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transport_passes_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/transport_passes_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/menu/pass",
+            "urlZh": "https://app.octopus.com.hk/menu/pass",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "EASYPARK",
+            "titleEn": "Easy Park Auto-Payment Service",
+            "titleZh": "Easy Park 自動付款服務",
+            "descEn": "Park and pay with your Mobile Octopus, without tapping!",
+            "descZh": "用手機八達通泊車繳費可無需拍卡！",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_park_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_park_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/cpff",
+            "urlZh": "https://app.octopus.com.hk/cpff",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "EASYRIDE",
+            "titleEn": "Easy Ride (Beta)",
+            "titleZh": "Call車易（體驗版）",
+            "descEn": "Ride-hailing service in Thailand, Singapore, Malaysia, and Vietnam",
+            "descZh": "於星馬泰越Call 車暢遊當地",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_ride_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/easy_ride_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/h5/heycars",
+            "urlZh": "https://app.octopus.com.hk/h5/heycars",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "CITI_OCTOPUS",
+            "titleEn": "Citi Octopus on iPhone",
+            "titleZh": "Citi八達通在iPhone",
+            "descEn": "Tap with your iPhone to pay while enjoying the convenience of Automatic Add Value Service",
+            "descZh": "以iPhone一嘟付款，享受自動增值的方便快捷",
+            "iconEn": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/citi_octopus_circle_icon_64.png",
+            "iconZh": "https://app.oepay.octopus-cards.com/mobile_app/images/quick-action/citi_octopus_circle_icon_64.png",
+            "urlEn": "https://app.octopus.com.hk/cobrand/806",
+            "urlZh": "https://app.octopus.com.hk/cobrand/806",
+            "platforms": [
+                "IOS"
+            ]
+        }
+    ],
+    "recommends": [
+        {
+            "code": "PAY_PAY",
+            "titleEn": "PayPay",
+            "titleZh": "PayPay",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "urlEn": "https://app.octopus.com.hk/hivex/paypay",
+            "urlZh": "https://app.octopus.com.hk/hivex/paypay",
+            "startDate": "2025-01-01T00:00:00+08:00",
+            "endDate": "2026-12-31T23:59:59+08:00"
+        },
+        {
+            "code": "FPSAAVS",
+            "titleEn": "FPS Top Up",
+            "titleZh": "自動增值服務（經轉數快）",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "urlEn": "https://app.octopus.com.hk/f_aavs",
+            "urlZh": "https://app.octopus.com.hk/f_aavs"
+        },
+        {
+            "code": "TAOBAO",
+            "titleEn": "Taobao discount",
+            "titleZh": "淘寶優惠",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "urlEn": "https://app.octopus.com.hk/offers/promotion/2599",
+            "urlZh": "https://app.octopus.com.hk/offers/promotion/2599"
+        },
+        {
+            "code": "IMAGESTORE",
+            "titleEn": "Card Image Store",
+            "titleZh": "八達通卡面商店",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "urlEn": "https://app.octopus.com.hk/cardArt/home",
+            "urlZh": "https://app.octopus.com.hk/cardArt/home"
+        },
+        {
+            "code": "REWARDBUY",
+            "titleEn": "Buy coupons",
+            "titleZh": "好賞買優惠券",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "urlEn": "https://app.octopus.com.hk/h5/rewardbuy",
+            "urlZh": "https://app.octopus.com.hk/h5/rewardbuy"
+        },
+        {
+            "code": "MO_PROVISION",
+            "titleEn": "Add Mobile Octopus",
+            "titleZh": "加入手機八達通",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ],
+            "urlEn": null,
+            "urlZh": null,
+            "urlEnAndroid": "https://app.octopus.com.hk/ao/provision",
+            "urlZhAndroid": "https://app.octopus.com.hk/ao/provision",
+            "urlEnHuawei": "https://app.octopus.com.hk/ao/provision",
+            "urlZhHuawei": "https://app.octopus.com.hk/ao/provision",
+            "urlEnIos": "https://app.octopus.com.hk/so/provision",
+            "urlZhIos": "https://app.octopus.com.hk/so/provision"
+        }
+    ],
+    "searchHints": [
+        {
+            "code": "PAY_PAY",
+            "titleEn": "PayPay",
+            "titleZh": "PayPay",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "FPSAAVS",
+            "titleEn": "FPS Top Up",
+            "titleZh": "自動增值服務（經轉數快）",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "TAOBAO",
+            "titleEn": "Taobao discount",
+            "titleZh": "淘寶優惠",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "IMAGESTORE",
+            "titleEn": "Card Image Store",
+            "titleZh": "八達通卡面商店",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        },
+        {
+            "code": "REWARDBUY",
+            "titleEn": "Buy coupons",
+            "titleZh": "好賞買優惠券",
+            "platforms": [
+                "IOS",
+                "ARD",
+                "HWI"
+            ]
+        }
+    ],
+    "defaultActions": [
+        {
+            "code": "ENQUIRY",
+            "isRemovable": true
+        },
+        {
+            "code": "PTFSS",
+            "isRemovable": true
+        },
+        {
+            "code": "PASS",
+            "isRemovable": true
+        },
+        {
+            "code": "WALLET",
+            "isRemovable": true
+        },
+        {
+            "code": "HOPEGOO",
+            "isRemovable": true
+        },
+        {
+            "code": "IMAGESTORE",
+            "isRemovable": true
+        }
+    ],
+    "updateInstructions": [
+        {
+            "version": 1,
+            "instruction": [
+                {
+                    "type": "ADD",
+                    "code": "WALLET"
+                },
+                {
+                    "type": "ADD",
+                    "code": "IMAGESTORE"
+                },
+                {
+                    "type": "ADD",
+                    "code": "P2P"
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "code": "ALL",
+            "textEn": "PayPay",
+            "textZh": "PayPay",
+            "textColorArgb": "#FFFFFFFF",
+            "bgColorArgb": "#FF004BD2"
+        },
+        {
+            "code": "HOT",
+            "textEn": "HOT",
+            "textZh": "熱門",
+            "textColorArgb": "#FFFFFFFF",
+            "bgColorArgb": "#FFFF0000"
+        },
+        {
+            "code": "NEW",
+            "textEn": "NEW",
+            "textZh": "新登場",
+            "textColorArgb": "#FFFFFFFF",
+            "bgColorArgb": "#FF004BD2"
+        },
+        {
+            "code": "TRAVEL",
+            "textEn": "PayPay",
+            "textZh": "PayPay",
+            "textColorArgb": "#FFFFFFFF",
+            "bgColorArgb": "#FF004BD2"
+        }
+    ],
+    "walletActions": [
+        {
+            "code": "P2P"
+        },
+        {
+            "code": "COLLECT"
+        },
+        {
+            "code": "ELAISEE"
+        },
+        {
+            "code": "TRAVEL"
+        },
+        {
+            "code": "VCC"
+        },
+        {
+            "code": "CUP"
+        }
+    ]
+}
