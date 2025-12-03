@@ -95,13 +95,13 @@ function renderGrouping() {
                                            onchange="updateGroupingAction(${groupIndex}, ${actionIndex}, 'action', this.value)"
                                            style="width: 100%; padding: 6px 10px; border: 1px solid #ced4da; border-radius: 4px; font-size: 13px;">
                                 </td>
-                                <td style="padding: 10px; color: #495057; font-size: 13px; display:flex; align-items:center; gap:8px;">
+                                <td style="padding: 10px; color: #495057; font-size: 15px; display:flex; align-items:center; gap:10px;">
                                     ${(() => {
                                         const act = actionByCode.get(actionObj.action);
-                                        if (!act) return '<span style=\"color:#999\">(unknown)</span>';
+                                        if (!act) return '<span style="color:#999">(unknown)</span>';
                                         const icon = act.iconEn || act.iconZh || '';
                                         const title = `${act.titleEn || ''}${act.titleZh ? ' / ' + act.titleZh : ''}`;
-                                        const imgHtml = icon ? `<img src=\"${icon}\" alt=\"${act.code}\" style=\"width:20px;height:20px;border-radius:4px;object-fit:contain;\">` : '';
+                                        const imgHtml = icon ? `<img src="${icon}" alt="${act.code}" style="width:28px;height:28px;border-radius:4px;object-fit:contain;">` : '';
                                         return `${imgHtml}<span>${title}</span>`;
                                     })()}
                                 </td>
