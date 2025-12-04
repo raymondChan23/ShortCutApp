@@ -51,8 +51,10 @@ function loadFile(event) {
                 // Show toolbar and stats after data load
                 const tb = document.getElementById('toolbar');
                 const sb = document.getElementById('statsBar');
+                const sidebar = document.getElementById('sidebar');
                 if (tb) tb.style.display = 'flex';
                 if (sb) sb.style.display = 'flex';
+                if (sidebar) sidebar.style.display = 'block';
                 
                 // Switch to grouping tab if no tab is selected
                 if (!currentTab) {
@@ -143,8 +145,10 @@ function renderCurrentTab() {
         // Keep toolbar and stats hidden while on welcome page
         const tb = document.getElementById('toolbar');
         const sb = document.getElementById('statsBar');
+        const sidebar = document.getElementById('sidebar');
         if (tb) tb.style.display = 'none';
         if (sb) sb.style.display = 'none';
+        if (sidebar) sidebar.style.display = 'none';
         return;
     }
     
@@ -153,8 +157,10 @@ function renderCurrentTab() {
     // Ensure toolbar and stats are visible when a tab is active
     const tb = document.getElementById('toolbar');
     const sb = document.getElementById('statsBar');
+    const sidebar = document.getElementById('sidebar');
     if (tb) tb.style.display = 'flex';
     if (sb) sb.style.display = 'flex';
+    if (sidebar) sidebar.style.display = 'block';
     
     if (currentTab === 'grouping') {
         container.className = '';

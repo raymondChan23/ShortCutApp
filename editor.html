@@ -662,7 +662,7 @@
 
         <div class="main-layout">
             <!-- Sidebar Navigation -->
-            <nav class="sidebar">
+            <nav class="sidebar" id="sidebar" style="display: none;">
                 <div class="nav-section">
                     <div class="nav-section-title">📊 Data Management</div>
                     <button class="nav-item" onclick="switchTab('grouping')">🔗 Grouping</button>
@@ -994,8 +994,10 @@
                 // Show toolbar and stats after data load
                 const tb = document.getElementById('toolbar');
                 const sb = document.getElementById('statsBar');
+                const sidebar = document.getElementById('sidebar');
                 if (tb) tb.style.display = 'flex';
                 if (sb) sb.style.display = 'flex';
+                if (sidebar) sidebar.style.display = 'block';
                 
                 // Also save as file for user
                 const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
