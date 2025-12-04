@@ -170,6 +170,10 @@ function renderGrouping() {
                             style="background: #28a745; color: white; border: none; padding: 6px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500;">
                         ➕ Add Action
                     </button>
+                    <button onclick="cloneGroupingCategory(${groupIndex})" 
+                            style="background: #17a2b8; color: white; border: none; padding: 6px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500;">
+                        🧬 Clone Category
+                    </button>
                     <button onclick="deleteGroupingCategory(${groupIndex})" 
                             style="background: #dc3545; color: white; border: none; padding: 6px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500;">
                         🗑️ Remove Category
@@ -294,16 +298,66 @@ function cloneGroupingAction(groupIndex, actionIndex) {
 }
 
 function addNewGroupingCategory() {
-    const categoryName = prompt('Enter category name:');
-    if (categoryName && categoryName.trim()) {
+    // Get available categories from jsonData.categories
+    if (!jsonData.categories || jsonData.categories.length === 0) {
+        alert('No categories available. Please add categories first in the Categories tab.');
+        return;
+    }
+    
+    // Create a list of available category codes
+    const existingCategoryCodes = new Set((jsonData.grouping || []).map(g => g.category));
+    const availableCategories = jsonData.categories.filter(cat => !existingCategoryCodes.has(cat.code));
+    
+    if (availableCategories.length === 0) {
+        alert('All categories are already in use. Please add more categories first.');
+        return;
+    }
+    
+    // Create selection prompt with category codes and titles
+    const options = availableCategories.map(cat => `${cat.code} - ${cat.titleEn}${cat.titleZh ? ' / ' + cat.titleZh : ''}`);
+    const selection = prompt(`Select a category (enter the code):\n\n${options.join('\n')}\n\nEnter category code:`);
+    
+    if (selection && selection.trim()) {
+        const selectedCode = selection.trim();
+        const selectedCategory = availableCategories.find(cat => cat.code === selectedCode);
+        
+        if (!selectedCategory) {
+            alert('Invalid category code. Please try again.');
+            return;
+        }
+        
         const newGroup = {
-            category: categoryName.trim(),
+            category: selectedCode,
             actions: []
         };
         jsonData.grouping.push(newGroup);
         renderGrouping();
-        showNotification('New category added!');
+        showNotification('New category added to grouping!');
     }
+}
+
+function cloneGroupingCategory(groupIndex) {
+    const original = jsonData.grouping[groupIndex];
+    if (!original) return;
+    
+    // Deep clone the category group
+    const clone = JSON.parse(JSON.stringify(original));
+    
+    // Generate unique category code with suffix
+    const baseCode = original.category || 'CATEGORY';
+    let candidate = `${baseCode}-copy`;
+    let counter = 2;
+    const existingCodes = new Set((jsonData.grouping || []).map(g => g.category));
+    while (existingCodes.has(candidate)) {
+        candidate = `${baseCode}-copy${counter}`;
+        counter++;
+    }
+    clone.category = candidate;
+    
+    // Insert clone after original
+    jsonData.grouping.splice(groupIndex + 1, 0, clone);
+    renderGrouping();
+    showNotification('Category cloned! Note: The category code is temporary. Update it if needed.');
 }
 
 function deleteGroupingCategory(groupIndex) {
